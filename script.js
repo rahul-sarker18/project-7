@@ -127,7 +127,7 @@ startBtn.addEventListener("click", function(){
       display.classList.remove("inactive");
       
       clearInterval(startCountdown);
-      startTime = new Date().getTime();
+      startTime = (new Date().getTime().toFixed(0));
     }
     count--;
   }, 1000);
