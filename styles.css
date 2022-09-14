@@ -189,6 +189,13 @@ button {
   .card {
     flex-direction: column;
   }
+
+.card.h1{
+  margin-bottom: 10px;
+}
+.card,div,p{
+  margin-top: 12px;
+}
 }
 
 
