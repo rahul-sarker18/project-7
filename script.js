@@ -23,6 +23,8 @@ fetch("./texts.json")
 const typeController = (e) => {
   const newLetter = e.key;
 
+  // console.log(e)
+
   // Handle backspace press
   if (newLetter == "Backspace") {
     userText = userText.slice(0, userText.length - 1);
@@ -37,6 +39,7 @@ const typeController = (e) => {
   if (!validLetters.includes(newLetter)) {
     return;
   }
+  // console.log(newLetter)
 
   userText += newLetter;
 
@@ -126,7 +129,8 @@ startBtn.addEventListener("click", function(){
       startTime = new Date().getTime();
     }
     count--;
-  }, 1000);
+  }, 10);
+  
 
 });
 
