@@ -198,4 +198,14 @@ button {
 }
 }
 
-
+.manu{
+  text-align: center;
+}
+.manu,a{
+  color: aqua;
+  text-decoration: none;
+  font-size: 25px;
+  padding: 10px;
+  font-weight: bold;
+  
+}
