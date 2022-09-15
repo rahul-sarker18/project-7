@@ -7,7 +7,7 @@ const modalBackground = document.getElementById("modal-background");
 
 // variables
 let userText = "";
-let errorCount = 0;
+let errorCount =0;
 let startTime;
 let questionText = "";
 
@@ -85,15 +85,15 @@ const gameOver = () => {
   resultModal.innerHTML += `
     <h1 style="margin-bottom: 15px;">Finished!</h1>
     <p style="margin-bottom: 17px;">You took: <span class="bold">${timeTaken}</span> seconds</p>
-    <p style="margin-bottom: 17px;">You made <span class="bold red">${errorCount}</span> mistakes</p>
+    <p style="margin-bottom: 17px;">You made <span class="bold red">${errorCount++}</span> mistakes</p>
     <button onclick="closeModal()">Close</button>
   `;
 
   addHistory(questionText, timeTaken, errorCount);
-
+  
   // restart everything
   startTime = null;
-  errorCount = 0;
+  errorCount++;
   userText = "";
   display.classList.add("inactive");
 };
