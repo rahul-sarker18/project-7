@@ -198,6 +198,29 @@ button {
 }
 }
 
+@media screen and (min-width:1000px){
+  .box-container {
+    padding: 0 20px;
+    width: 100%;
+  }
+  .card {
+    flex-direction: column;
+  }
+
+.card.h1{
+  margin-bottom: 5px;
+}
+.card,div,p{
+  margin-top: 5px;
+}
+#histories{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 15px;
+}
+  
+}
+
 .manu{
   text-align: center;
 }
