@@ -198,7 +198,7 @@ button {
 }
 }
 
-@media screen and (min-width:1000px){
+@media screen and (min-width:950px){
   .box-container {
     padding: 0 20px;
     width: 100%;
